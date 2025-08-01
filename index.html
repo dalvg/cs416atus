@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title here</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+        <script type="module" src="app.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div>
+            <div class="intro">
+                <h1>American Time Use Insights</h1>
+                <br>
+                    What changes can be seen in the amount of time people spend
+                    on various activities? The visualization below examines data
+                    from the
+                    <a href="https://www.bls.gov/tus/"
+                        >American Time Use Survey</a
+                    >
+                    in three year increments starting from 2015 and ending in
+                    2024.The graph below shows how many hours were spent daily on
+                    various activities.
+                   <p> Time can be examined in three-year increments using the
+                    buttons. Hovering over each bar provides a tooltip with more details on the amount of time spent on an activity.
+                    </p><p> Annotations throughout the charts draw attention to certain details, such as how time <strong>socializing and
+                    communicating</strong> has decreased, how women spend significantly
+                    more time on tasks such as <strong>food preparation</strong> and <strong>housework</strong>,
+                    and how men have begun to spend more time on those same tasks
+                    throughout the years.</br>
+                </p>
+            </div>
+            <div class="buttons">
+                <button onclick="handleClick(2015)" value="2015">2015</button>
+                <button onclick="handleClick(2018)" value="2018">2018</button>
+                <button onclick="handleClick(2021)" value="2021">2021</button>
+                <button onclick="handleClick(2024)" value="2024">2024</button>
+            </div>
+            <div id="chart"></div>
+        </div>
+    </body>
+</html>
