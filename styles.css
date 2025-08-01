@@ -1,0 +1,39 @@
+body {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.intro {
+    max-width: 1200px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    transition: 0.5s;
+    font: "Roboto Monoco";
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #bde6ef;
+    transition: 0.5s;
+}
+
+button.clicked {
+    background-color: #fbc9b1;
+}
